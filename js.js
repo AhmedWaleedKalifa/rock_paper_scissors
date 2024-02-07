@@ -31,8 +31,8 @@ function playRound(computerSelection,playerSelection){
     function playGame(){
         let input,temp;
         let result=0,computerResult=0;
-        for(let i=0;i<5;i++){
         console.log("You start the game you can choose 'rock','paper' or 'scissors'");
+        for(let i=0;i<5;i++){
         input=prompt("Enter your selection to start the round!");
         temp=playRound(getComputerChoice(),input);
         console.log(temp);
