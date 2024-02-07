@@ -11,7 +11,7 @@ function getComputerChoice(){
 function playRound(computerSelection,playerSelection){
     playerSelection=(playerSelection.at(0).toUpperCase()+playerSelection.slice(1).toLowerCase());
     if(computerSelection==playerSelection){
-    return "Draw";
+    return "Draw.";
     }else if(computerSelection=="Rock"&&playerSelection=="Paper"){
     return "You Won! Paper beats Rock.";
     }else if(computerSelection=="Rock"&&playerSelection=="Scissors"){
@@ -44,11 +44,11 @@ function playRound(computerSelection,playerSelection){
         }
         console.log("---------------------------");
         if(result>computerResult){
-        console.log( "You Won");
+        console.log( "You Won.");
         }else if(result<computerResult){
-        console.log( "You Lose");
+        console.log( "You Lose.");
         }else{
-        console.log("Draw");
+        console.log("Draw.");
         }
         console.log("---------------------------");
         }
