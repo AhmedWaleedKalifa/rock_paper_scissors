@@ -28,3 +28,29 @@ function playRound(computerSelection,playerSelection){
     return "The input is wrong try again.";
     }
     }
+    function playGame(){
+        let input,temp;
+        let result=0,computerResult=0;
+        for(let i=0;i<5;i++){
+        input=prompt("Enter your selection to start the round!");
+        temp=playRound(getComputerChoice(),input);
+        console.log(temp);
+        if(temp.at(4)=="W"){
+        result++;
+        }else if(temp.at(4)=="L"){
+        computerResult++;
+        }else{
+        }
+        }
+        console.log("---------------------------");
+        if(result>computerResult){
+        console.log( "You Won");
+        }else if(result<computerResult){
+        console.log( "You Lose");
+        }else{
+        console.log("Draw");
+        }
+        console.log("---------------------------");
+        }
+        playGame();
+        
