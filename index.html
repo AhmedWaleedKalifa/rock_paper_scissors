@@ -5,8 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock_Paper_scissors</title>
     <script src="js.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <a href="game.html">Play</a>
+    <h1><strong class="rock">Rock, </strong><strong class="paper">Paper, </strong> And <strong class="scissors">Scissors</strong> Game!</h1>
+    <p>The player get 5 points first win the game</p>
+    
+    <div class="players">
+        <img src="/images/person.png" alt="person">
+        <div id="score">
+            <span id="user">0</span>
+            <span>-</span>
+            <span id="computer">0</span>
+        </div>
+        <img class="comp" src="/images/computer.png" alt="computer">
+
+    </div>
+    <div class="message-container">
+        <img height="80px" width="120px" id="left">
+        <div id="message"></div>
+        <img height="80px" width="120px" id="right">
+    </div>
+    <div id="container">
+        <button id="Rock">Rock</button>
+        <button id="Paper">Paper</button>
+        <button id="Scissors">Scissors</button>
+    </div>
 </body>
 </html>
