@@ -42,15 +42,15 @@ button{
 }
 #Rock{
     background-color: rgb(233, 233, 57);
-    background-image: url("/images/rockRMin.png");
+    background-image: url("./images/rockRMin.png");
 }
 #Paper{
     background-color: rgb(71, 71, 227);
-    background-image: url("/images/paperRMin.png");
+    background-image: url("./images/paperRMin.png");
 }
 #Scissors{
     background-color: rgb(201, 57, 57);
-    background-image: url("/images/scissorRMin.png");
+    background-image: url("./images/scissorRMin.png");
 
 }
 #Rock:hover{

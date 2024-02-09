@@ -57,19 +57,19 @@ buttons.forEach((button)=>{
         }
         const computerTemp=getComputerChoice();
         if(computerTemp=="Rock"){
-            rightImage.setAttribute("src","/images/rockLMin.png");
+            rightImage.setAttribute("src","./images/rockLMin.png");
         }else if(computerTemp=="Paper"){
-            rightImage.setAttribute("src","/images/paperLMin.png");
+            rightImage.setAttribute("src","./images/paperLMin.png");
         }else{
-            rightImage.setAttribute("src","/images/scissorLMin.png");
+            rightImage.setAttribute("src","./images/scissorLMin.png");
         }
         const userTemp=button.id;
         if(userTemp=="Rock"){
-            leftImage.setAttribute("src","/images/rockRMin.png");
+            leftImage.setAttribute("src","./images/rockRMin.png");
         }else if(userTemp=="Paper"){
-            leftImage.setAttribute("src","/images/paperRMin.png");
+            leftImage.setAttribute("src","./images/paperRMin.png");
         }else{
-            leftImage.setAttribute("src","/images/scissorRMin.png");
+            leftImage.setAttribute("src","./images/scissorRMin.png");
         }
         const temp=playRound(computerTemp,userTemp);
         message.textContent=temp;
