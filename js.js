@@ -57,5 +57,52 @@ function playGame() {
     }
     console.log("---------------------------");
 }
+let userResult=0;
+let computerResult=0;
 //call the function
-playGame();
+const buttons=document.querySelectorAll('button');
+const container=document.querySelector("#container");
+const div=document.createElement("div");
+const div2=document.createElement("div");
+const div3=document.createElement("div");
+const span=document.createElement("span");
+const span2=document.createElement("span");
+span.style.color="green";
+span2.style.color="red";
+function end(){
+    container.appendChild(div2);
+    userResult=0;
+    computerResult=0
+    div.textContent="";
+    span.textContent="";
+    span2.textContent="";
+}
+container.appendChild(div);
+buttons.forEach((button)=>{
+    button.addEventListener("click",()=>{
+        if(computerResult==0&&userResult==0){
+            div2.textContent="";
+        }
+        const temp=playRound(getComputerChoice(),button.id);
+        div.textContent=temp;
+        container.appendChild(span);
+        container.appendChild(span2);
+        if (temp.at(4) == "W") {
+            userResult++;
+            span.textContent=userResult;
+        } else if (temp.at(4) == "L") {
+            computerResult++;
+            span2.textContent=computerResult;
+        } else {
+        }
+        if(userResult==5){
+            div2.textContent="congratulation you won!";
+            div2.style.color="green";
+            end();
+        }else if(computerResult==5){
+            div2.textContent="You lose!";
+            div2.style.color="red";
+            end();
+        }
+    });
+});
