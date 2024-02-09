@@ -82,7 +82,7 @@ buttons.forEach((button)=>{
         } else {
         }
         if(userResultNum1==5){
-            message.textContent="congratulation, You Win!";
+            message.textContent="Congratulation, You Win!";
             message.style.color="green";
             end();
         }else if(computerResultNum1==5){
