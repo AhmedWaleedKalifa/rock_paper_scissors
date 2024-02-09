@@ -16,15 +16,15 @@ function playRound(computerSelection, playerSelection) {
     if (computerSelection == playerSelection) {
         return "Draw.";
     } else if (computerSelection == "Rock" && playerSelection == "Paper") {
-        return "You Won! Paper beats Rock.";
+        return "You Win! Paper beats Rock.";
     } else if (computerSelection == "Rock" && playerSelection == "Scissors") {
         return "You Lose! Rock beats Scissors.";
     } else if (computerSelection == "Paper" && playerSelection == "Rock") {
         return "You Lose! Paper beats Rock.";
     } else if (computerSelection == "Paper" && playerSelection == "Scissors") {
-        return "You Won! Scissors beats Paper.";
+        return "You Win! Scissors beats Paper.";
     } else if (computerSelection == "Scissors" && playerSelection == "Rock") {
-        return "You Won! Rock beats Scissors.";
+        return "You Win! Rock beats Scissors.";
     } else if (computerSelection == "Scissors" && playerSelection == "Paper") {
         return "You Lose! Scissors beats Paper.";
     } else {
@@ -82,11 +82,11 @@ buttons.forEach((button)=>{
         } else {
         }
         if(userResultNum1==5){
-            message.textContent="congratulation, you win!";
+            message.textContent="congratulation, You Win!";
             message.style.color="green";
             end();
         }else if(computerResultNum1==5){
-            message.textContent="Game Over, you lose!";
+            message.textContent="Game Over, You Lose!";
             message.style.color="red";
             end();
         }
